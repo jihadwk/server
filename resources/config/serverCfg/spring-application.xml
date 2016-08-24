@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+		<!-- 加载属性配置文件，在bean实例化之前读取元数据 -->
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations"><!-- 多个property文件用locations，list -->
+			<list>
+				<value>resources/config/properties/appConfig.properties</value>
+				<value>resources/config/properties/server.properties</value>
+				<value>resources/config/properties/test.properties</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="test" class="com.wk.loginserver.entity.Test">
+		<property name="test" value="${root}"></property>
+		<property name="appId" value="${current.appid}"/>
+	</bean>
+	<bean id="protocolCodecFactory" class=""></bean>	
+	<bean id="minaServer" class="com.wk.loginserver.MinaServer" destroy-method="stop">
+		<property name="address" value="${address}"></property>
+		<property name="port" value="${port}"></property>
+		<property name="connectionInterval" value="${connectionInterval}"/>
+		<property name="readerIdleMaxTime" value="${readerIdleMaxTime}"></property>
+		<property name="writerIdleMaxTime" value="${writerIdleMaxTime}"/>
+		<property name="bothIdleMaxTime" value="${bothIdleMaxTime}"/>
+	</bean>
+	<bean id="service" class="com.wk.loginserver.entity.Service"></bean>
+	<context:annotation-config />
+</beans>
