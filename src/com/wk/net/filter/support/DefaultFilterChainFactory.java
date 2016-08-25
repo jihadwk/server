@@ -15,7 +15,7 @@ public class DefaultFilterChainFactory
 
   public DefaultFilterChainFactory()
   {
-    this.filterList = new LinkedList();
+    this.filterList = new LinkedList<Filter>();
   }
 
   public List<Filter> getFilterList() {
@@ -28,7 +28,7 @@ public class DefaultFilterChainFactory
 
   public synchronized DefaultFilterChain createApplicationFilterChain() {
     DefaultFilterChain chain = new DefaultFilterChain();
-    Iterator it = this.filterList.iterator();
+    Iterator<Filter> it = this.filterList.iterator();
     while (it.hasNext()) {
       Filter filter = (Filter)it.next();
       chain.addFilter(filter);

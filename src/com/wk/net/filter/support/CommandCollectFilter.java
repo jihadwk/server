@@ -1,17 +1,21 @@
 package com.wk.net.filter.support;
-
-import org.apache.log4j.Logger;
 import org.apache.mina.core.session.IoSession;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.wk.net.action.Request;
 import com.wk.net.action.Response;
 import com.wk.net.filter.Filter;
 import com.wk.net.filter.FilterChain;
-
+/**
+ * action执行之前的操作，这个filter好像没什么用
+ * @author wukai
+ *
+ */
 public class CommandCollectFilter
   implements Filter
 {
-  private Logger logger = Logger.getLogger(getClass());
+  private Logger logger = LoggerFactory.getLogger(getClass());
   private String destinationName;
 
   public String getDestinationName()
@@ -45,7 +49,9 @@ public class CommandCollectFilter
     notify.setChannelKey((String)session.getAttribute("rinfo"));
     notify.setFid((String)session.getAttribute("fid"));
     notify.setMessage(request.getMessage());
+    
     chain.doFilter(request, response);
+    
     if (this.logger.isDebugEnabled())
       this.logger.debug("RESPONSE FINISHED:sessionId=" + request.getSession().getId() + ", sequence=" + 
         request.getSequence());

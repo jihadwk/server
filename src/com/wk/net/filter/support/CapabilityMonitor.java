@@ -1,25 +1,28 @@
- package com.wk.net.filter.support;
- 
-import com.google.protobuf.ByteString;
+package com.wk.net.filter.support;
 import com.wk.loginserver.manager.Application;
 import com.wk.net.action.Request;
 import com.wk.net.action.Response;
 import com.wk.net.filter.Filter;
 import com.wk.net.filter.FilterChain;
-
 import java.util.Date;
- import java.util.Hashtable;
- import java.util.List;
- import java.util.Map;
- import java.util.Timer;
- import java.util.TimerTask;
-import org.apache.log4j.Logger;
- 
+import java.util.Hashtable;
+import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+ /**
+  * 所有的action.execute 之前执行的过滤处理操作
+  * 参考mina的filter
+  * CapabilityMonitor 是一个监控过滤器
+  * @author wukai
+  *
+  */
  public class CapabilityMonitor
    implements Filter
  {
-   private Logger logger = Logger.getLogger(getClass());
-   private Map<String, Tag> map = new Hashtable();
+   private Logger logger = LoggerFactory.getLogger(getClass());
+   private Map<String, Tag> map = new Hashtable<String, Tag>();
    private Timer timer = new Timer();
    private int monitor;
    private int monitorType;
@@ -68,7 +71,9 @@ import org.apache.log4j.Logger;
      tag.setSession(request.getSession());
      tag.setThreadId(Thread.currentThread().getId());
      this.map.put(String.valueOf(Thread.currentThread().getId()), tag);
+     
      chain.doFilter(request, response);
+     
      this.map.remove(String.valueOf(Thread.currentThread().getId()));
      if (this.logger.isDebugEnabled())
        this.logger.debug("Monitor:action 执行时间：" + (System.currentTimeMillis() - tag.getCreateTime().getTime()) + "毫秒；消息：" + 

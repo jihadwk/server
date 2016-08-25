@@ -3,18 +3,24 @@ package com.wk.net.filter.support;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import org.apache.log4j.Logger;
-import org.apache.mina.core.session.IdleStatus;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.wk.net.action.Action;
 import com.wk.net.action.Request;
 import com.wk.net.action.Response;
 import com.wk.net.filter.Filter;
 import com.wk.net.filter.FilterChain;
-
+/**
+ * 过滤链实现，拥有一个链式集合
+ * 增加filter ，获取，处理
+ * @author wukai
+ *
+ */
 public class DefaultFilterChain implements FilterChain {
-	private Logger logger = Logger.getLogger(getClass());
-	private List<Filter> filters = new LinkedList();
+	private Logger logger = LoggerFactory.getLogger(getClass());
+	private List<Filter> filters = new LinkedList<Filter>();
 	private Action action;
 //	private Notice notice;
 	private Iterator<Filter> it = null;

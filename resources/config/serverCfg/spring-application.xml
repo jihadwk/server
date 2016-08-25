@@ -11,6 +11,7 @@
 			<list>
 				<value>resources/config/properties/appConfig.properties</value>
 				<value>resources/config/properties/server.properties</value>
+				<value>resources/config/properties/jdbc.properties</value>
 				<value>resources/config/properties/test.properties</value>
 			</list>
 		</property>

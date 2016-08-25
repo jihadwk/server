@@ -7,19 +7,26 @@ import java.util.Map;
 import java.util.ResourceBundle;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-import org.apache.log4j.Logger;
-import org.springframework.context.ApplicationContext;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import com.wk.net.AppContext;
 import com.wk.net.action.Action;
 import com.wk.net.action.ActionFactory;
-
+/**
+ * action 生成工厂
+ * 参数：指令
+ * @author wukai
+ *
+ */
 public class DefaultActionFactory
   implements ActionFactory
 {
-  private final Logger logger = Logger.getLogger(getClass());
+  private final Logger logger = LoggerFactory.getLogger(getClass());
   private Map<String, String> actionMap;
   private AppContext context;
 
@@ -27,9 +34,11 @@ public class DefaultActionFactory
   {
     init();
   }
-
+/**
+ * 从action.xml中解析出业务action，存储到map表中
+ */
   private void init() {
-    this.actionMap = new HashMap();
+    this.actionMap = new HashMap<String, String>();
     this.context = AppContext.getInstance();
     InputStream input = null;
     try {
@@ -56,7 +65,8 @@ public class DefaultActionFactory
     }
     catch (Exception e)
     {
-      throw new InitializeException("Initialize ActionFactory Exception", e);
+    	e.printStackTrace();
+//      throw new InitializeException("Initialize ActionFactory Exception", e);
     } finally {
       try {
         input.close();
@@ -66,6 +76,9 @@ public class DefaultActionFactory
     }
   }
 
+  /**
+   * 根据指令创建对应的action
+   */
   public Action createAction(int commandId) throws Exception
   {
     String beanName = (String)this.actionMap.get(String.valueOf(commandId));
