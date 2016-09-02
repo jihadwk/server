@@ -20,7 +20,11 @@
 		<property name="test" value="${root}"></property>
 		<property name="appId" value="${current.appid}"/>
 	</bean>
-	<bean id="protocolCodecFactory" class=""></bean>	
+	<!-- 协议编解码工厂 -->
+	<bean id="protocolCodecFactory" class="com.wk.net.DefaultDemuxingProtocolCodecFactory"></bean>
+	<!-- iohandler处理器 -->	
+	<bean id="minaIoHandler" class="com.wk.loginserver.handler.DefaultMinaIoHandler"></bean>
+	<!-- mina server  -->
 	<bean id="minaServer" class="com.wk.loginserver.MinaServer" destroy-method="stop">
 		<property name="address" value="${address}"></property>
 		<property name="port" value="${port}"></property>
@@ -28,6 +32,38 @@
 		<property name="readerIdleMaxTime" value="${readerIdleMaxTime}"></property>
 		<property name="writerIdleMaxTime" value="${writerIdleMaxTime}"/>
 		<property name="bothIdleMaxTime" value="${bothIdleMaxTime}"/>
+	</bean>
+	<bean id="actionFactory" class="com.wk.net.action.support.DefaultActionFactory" />
+	<bean id="actionDispatcher" class="com.wk.net.action.support.DefaultActionDispatcher">
+		<property name="filterChainFactory" ref="filterChainFactory"/>
+		<property name="actionFactory" ref="actionFactory"/>
+	</bean>
+	<bean id="filterChainFactory"
+		class="com.wk.net.filter.support.DefaultFilterChainFactory">
+		<property name="filterList">
+			<list>
+				<ref bean="capabilityMonitor" />
+				<ref bean="commandFilter" />
+			</list>
+		</property>
+	</bean>
+	<bean id="commandFilter" class="com.wk.net.filter.support.CommandCollectFilter"
+		init-method="init" destroy-method="destroy">
+		<property name="destinationName">
+			<value>topic/</value>
+		</property>
+	</bean>
+	<bean id="capabilityMonitor" class="com.wk.net.filter.support.CapabilityMonitor"
+		init-method="init" destroy-method="destroy">
+		<property name="interval">
+			<value>10000</value>
+		</property>
+	</bean>
+	<bean id="appConfig" class="com.wk.config.AppConfig"
+		init-method="init">
+		<property name="fileName">
+			<value>/resources/config/properties/appConfig.properties</value>
+		</property>
 	</bean>
 	<bean id="service" class="com.wk.loginserver.entity.Service"></bean>
 	<context:annotation-config />

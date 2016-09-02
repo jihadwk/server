@@ -18,6 +18,7 @@ import org.apache.mina.filter.executor.ExecutorFilter;
 import org.apache.mina.filter.firewall.ConnectionThrottleFilter;
 import org.apache.mina.filter.logging.LoggingFilter;
 import org.apache.mina.transport.socket.nio.NioSocketAcceptor;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.wk.config.AppConfig;
 import com.wk.loginserver.manager.Application;
@@ -27,11 +28,14 @@ import com.wk.loginserver.manager.Application;
  */
 public class MinaServer {
 	private Logger logger = Logger.getLogger(getClass());
+	@Autowired
 	private ProtocolCodecFactory protocolCodecFactory;
 	private IoAcceptor acceptor;
+	@Autowired
 	private AppConfig appConfig;
 	private int port;
 	private String address;
+	@Autowired
 	private IoHandler handler;
 	/** 核心线程池数量 */
 	private int corePoolSize = 16;
@@ -134,13 +138,13 @@ public class MinaServer {
 		}
 	}
 
-	public ProtocolCodecFactory getProtocolCodecFactory() {
-		return protocolCodecFactory;
-	}
-
-	public void setProtocolCodecFactory(ProtocolCodecFactory protocolCodecFactory) {
-		this.protocolCodecFactory = protocolCodecFactory;
-	}
+//	public ProtocolCodecFactory getProtocolCodecFactory() {
+//		return protocolCodecFactory;
+//	}
+//
+//	public void setProtocolCodecFactory(ProtocolCodecFactory protocolCodecFactory) {
+//		this.protocolCodecFactory = protocolCodecFactory;
+//	}
 
 	public IoAcceptor getAcceptor() {
 		return acceptor;
@@ -166,13 +170,13 @@ public class MinaServer {
 		this.address = address;
 	}
 
-	public IoHandler getHandler() {
-		return handler;
-	}
-
-	public void setHandler(IoHandler handler) {
-		this.handler = handler;
-	}
+//	public IoHandler getHandler() {
+//		return handler;
+//	}
+//
+//	public void setHandler(IoHandler handler) {
+//		this.handler = handler;
+//	}
 
 	public int getCorePoolSize() {
 		return corePoolSize;

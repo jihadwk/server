@@ -5,6 +5,7 @@ import org.apache.mina.core.session.IdleStatus;
 import org.apache.mina.core.session.IoSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.commonSocket.net.IMessage;
 import com.wk.net.IoMode;
@@ -22,6 +23,7 @@ import com.wk.net.action.support.DefaultResponse;
  public class DefaultMinaIoHandler extends IoHandlerAdapter
  {
    private Logger logger = LoggerFactory.getLogger(getClass());
+   @Autowired
    private ActionDispatcher actionDispatcher;
 //   private NoticeDispatcher noticeDispatcher;
 //   private OnlineManage onlineManage;

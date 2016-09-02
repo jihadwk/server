@@ -1,11 +1,12 @@
-2016-08-23 09:49:57  [ main:0 ] - [ ERROR ]  启动成功
-2016-08-23 14:04:53  [ main:1 ] - [ ERROR ]  load properties config file error
-java.io.FileNotFoundException: /Users/wukai/Documents/GitWork/serverresources/config/properties/appConfig.properties (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at com.wk.config.BaseConfig.load(BaseConfig.java:36)
-	at com.wk.config.BaseConfig.init(BaseConfig.java:29)
-	at com.wk.config.BaseConfig.getConfig(BaseConfig.java:47)
-	at com.wk.config.AppConfig.getAppId(AppConfig.java:5)
-	at com.wk.config.AppConfig.main(AppConfig.java:33)
+2016-09-01 18:28:35  [ main:1221 ] - [ ERROR ]  <-Failed to start AppServer->
+java.io.IOException: Error while binding on /192.168.1.107:8888
+original message : Can't assign requested address
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:238)
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:51)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor.registerHandles(AbstractPollingIoAcceptor.java:585)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor.access$400(AbstractPollingIoAcceptor.java:71)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.run(AbstractPollingIoAcceptor.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
