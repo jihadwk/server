@@ -1,0 +1,584 @@
+2016-09-01 18:28:33  [ main:0 ] - [ DEBUG ]  /resources/config/serverCfg/spring-application.xml
+2016-09-01 18:28:33  [ main:161 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-01 18:28:33  [ main:164 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-01 18:28:33  [ main:164 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-01 18:28:33  [ main:168 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@7637f22: startup date [Thu Sep 01 18:28:33 CST 2016]; root of context hierarchy
+2016-09-01 18:28:34  [ main:205 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-01 18:28:34  [ main:205 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-01 18:28:34  [ main:206 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-01 18:28:34  [ main:216 ] - [ INFO ]  Loading XML bean definitions from file [/Users/wukai/Documents/GitWork/server/resources/config/serverCfg/spring-application.xml]
+2016-09-01 18:28:34  [ main:230 ] - [ DEBUG ]  Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2016-09-01 18:28:34  [ main:274 ] - [ DEBUG ]  Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans-4.3.xsd]
+2016-09-01 18:28:34  [ main:275 ] - [ DEBUG ]  Loading schema mappings from [META-INF/spring.schemas]
+2016-09-01 18:28:34  [ main:281 ] - [ DEBUG ]  Loaded schema mappings: {http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.3.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/context/spring-context-4.3.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-4.3.xsd=org/springframework/aop/config/spring-aop-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-4.3.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.3.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-4.3.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-4.3.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-4.3.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/task/spring-task-4.3.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.3.xsd}
+2016-09-01 18:28:34  [ main:285 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans-4.3.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.3.xsd
+2016-09-01 18:28:34  [ main:361 ] - [ DEBUG ]  Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/context/spring-context-4.3.xsd]
+2016-09-01 18:28:34  [ main:362 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/context/spring-context-4.3.xsd] in classpath: org/springframework/context/config/spring-context-4.3.xsd
+2016-09-01 18:28:34  [ main:378 ] - [ DEBUG ]  Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/tool/spring-tool-4.3.xsd]
+2016-09-01 18:28:34  [ main:379 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.3.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.3.xsd
+2016-09-01 18:28:34  [ main:394 ] - [ DEBUG ]  Loading bean definitions
+2016-09-01 18:28:34  [ main:433 ] - [ DEBUG ]  Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2016-09-01 18:28:34  [ main:490 ] - [ DEBUG ]  Loaded 18 bean definitions from location pattern [/resources/config/serverCfg/spring-application.xml]
+2016-09-01 18:28:34  [ main:491 ] - [ DEBUG ]  Bean factory for org.springframework.context.support.FileSystemXmlApplicationContext@7637f22: org.springframework.beans.factory.support.DefaultListableBeanFactory@4e1d422d: defining beans [propertyConfigurer,test,protocolCodecFactory,minaIoHandler,minaServer,actionFactory,actionDispatcher,filterChainFactory,commandFilter,capabilityMonitor,appConfig,service,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory]; root of factory hierarchy
+2016-09-01 18:28:34  [ main:567 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 18:28:34  [ main:567 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 18:28:34  [ main:627 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:634 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 18:28:34  [ main:704 ] - [ DEBUG ]  Creating shared instance of singleton bean 'propertyConfigurer'
+2016-09-01 18:28:34  [ main:704 ] - [ DEBUG ]  Creating instance of bean 'propertyConfigurer'
+2016-09-01 18:28:34  [ main:706 ] - [ DEBUG ]  Eagerly caching bean 'propertyConfigurer' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:717 ] - [ DEBUG ]  Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2016-09-01 18:28:34  [ main:718 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]
+2016-09-01 18:28:34  [ main:726 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]
+2016-09-01 18:28:34  [ main:727 ] - [ DEBUG ]  Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2016-09-01 18:28:34  [ main:732 ] - [ DEBUG ]  Found bean property 'beanName' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:733 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:734 ] - [ DEBUG ]  Found bean property 'fileEncoding' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:734 ] - [ DEBUG ]  Found bean property 'ignoreResourceNotFound' of type [boolean]
+2016-09-01 18:28:34  [ main:734 ] - [ DEBUG ]  Found bean property 'ignoreUnresolvablePlaceholders' of type [boolean]
+2016-09-01 18:28:34  [ main:735 ] - [ DEBUG ]  Found bean property 'localOverride' of type [boolean]
+2016-09-01 18:28:34  [ main:735 ] - [ DEBUG ]  Found bean property 'location' of type [org.springframework.core.io.Resource]
+2016-09-01 18:28:34  [ main:735 ] - [ DEBUG ]  Found bean property 'locations' of type [[Lorg.springframework.core.io.Resource;]
+2016-09-01 18:28:34  [ main:736 ] - [ DEBUG ]  Found bean property 'nullValue' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:736 ] - [ DEBUG ]  Found bean property 'order' of type [int]
+2016-09-01 18:28:34  [ main:736 ] - [ DEBUG ]  Found bean property 'placeholderPrefix' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:736 ] - [ DEBUG ]  Found bean property 'placeholderSuffix' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:737 ] - [ DEBUG ]  Found bean property 'properties' of type [java.util.Properties]
+2016-09-01 18:28:34  [ main:737 ] - [ DEBUG ]  Found bean property 'propertiesArray' of type [[Ljava.util.Properties;]
+2016-09-01 18:28:34  [ main:737 ] - [ DEBUG ]  Found bean property 'propertiesPersister' of type [org.springframework.util.PropertiesPersister]
+2016-09-01 18:28:34  [ main:738 ] - [ DEBUG ]  Found bean property 'searchSystemEnvironment' of type [boolean]
+2016-09-01 18:28:34  [ main:742 ] - [ DEBUG ]  Found bean property 'systemPropertiesMode' of type [int]
+2016-09-01 18:28:34  [ main:742 ] - [ DEBUG ]  Found bean property 'systemPropertiesModeName' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:744 ] - [ DEBUG ]  Found bean property 'trimValues' of type [boolean]
+2016-09-01 18:28:34  [ main:745 ] - [ DEBUG ]  Found bean property 'valueSeparator' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:752 ] - [ DEBUG ]  Finished creating instance of bean 'propertyConfigurer'
+2016-09-01 18:28:34  [ main:753 ] - [ INFO ]  Loading properties file from file [/Users/wukai/Documents/GitWork/server/resources/config/properties/appConfig.properties]
+2016-09-01 18:28:34  [ main:754 ] - [ INFO ]  Loading properties file from file [/Users/wukai/Documents/GitWork/server/resources/config/properties/server.properties]
+2016-09-01 18:28:34  [ main:754 ] - [ INFO ]  Loading properties file from file [/Users/wukai/Documents/GitWork/server/resources/config/properties/jdbc.properties]
+2016-09-01 18:28:34  [ main:757 ] - [ INFO ]  Loading properties file from file [/Users/wukai/Documents/GitWork/server/resources/config/properties/test.properties]
+2016-09-01 18:28:34  [ main:761 ] - [ DEBUG ]  Resolved placeholder 'root'
+2016-09-01 18:28:34  [ main:761 ] - [ DEBUG ]  Resolved placeholder 'current.appid'
+2016-09-01 18:28:34  [ main:762 ] - [ DEBUG ]  Resolved placeholder 'address'
+2016-09-01 18:28:34  [ main:762 ] - [ DEBUG ]  Resolved placeholder 'port'
+2016-09-01 18:28:34  [ main:763 ] - [ DEBUG ]  Resolved placeholder 'connectionInterval'
+2016-09-01 18:28:34  [ main:763 ] - [ DEBUG ]  Resolved placeholder 'readerIdleMaxTime'
+2016-09-01 18:28:34  [ main:763 ] - [ DEBUG ]  Resolved placeholder 'writerIdleMaxTime'
+2016-09-01 18:28:34  [ main:764 ] - [ DEBUG ]  Resolved placeholder 'bothIdleMaxTime'
+2016-09-01 18:28:34  [ main:767 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 18:28:34  [ main:768 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 18:28:34  [ main:769 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:770 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 18:28:34  [ main:770 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 18:28:34  [ main:770 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 18:28:34  [ main:771 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:771 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 18:28:34  [ main:771 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 18:28:34  [ main:772 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 18:28:34  [ main:782 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:782 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 18:28:34  [ main:783 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 18:28:34  [ main:783 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 18:28:34  [ main:783 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:783 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 18:28:34  [ main:784 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 18:28:34  [ main:784 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 18:28:34  [ main:784 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:784 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 18:28:34  [ main:790 ] - [ DEBUG ]  Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@5e955596]
+2016-09-01 18:28:34  [ main:793 ] - [ DEBUG ]  Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@6c9f5c0d]
+2016-09-01 18:28:34  [ main:795 ] - [ DEBUG ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4e1d422d: defining beans [propertyConfigurer,test,protocolCodecFactory,minaIoHandler,minaServer,actionFactory,actionDispatcher,filterChainFactory,commandFilter,capabilityMonitor,appConfig,service,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+2016-09-01 18:28:34  [ main:796 ] - [ DEBUG ]  Returning cached instance of singleton bean 'propertyConfigurer'
+2016-09-01 18:28:34  [ main:797 ] - [ DEBUG ]  Creating shared instance of singleton bean 'test'
+2016-09-01 18:28:34  [ main:797 ] - [ DEBUG ]  Creating instance of bean 'test'
+2016-09-01 18:28:34  [ main:804 ] - [ DEBUG ]  Eagerly caching bean 'test' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:805 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.loginserver.entity.Test]
+2016-09-01 18:28:34  [ main:806 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.loginserver.entity.Test]
+2016-09-01 18:28:34  [ main:807 ] - [ DEBUG ]  Found bean property 'appId' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:807 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:807 ] - [ DEBUG ]  Found bean property 'test' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:810 ] - [ DEBUG ]  Finished creating instance of bean 'test'
+2016-09-01 18:28:34  [ main:810 ] - [ DEBUG ]  Creating shared instance of singleton bean 'protocolCodecFactory'
+2016-09-01 18:28:34  [ main:810 ] - [ DEBUG ]  Creating instance of bean 'protocolCodecFactory'
+2016-09-01 18:28:34  [ main:828 ] - [ DEBUG ]  Eagerly caching bean 'protocolCodecFactory' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:828 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.net.DefaultDemuxingProtocolCodecFactory]
+2016-09-01 18:28:34  [ main:842 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.net.DefaultDemuxingProtocolCodecFactory]
+2016-09-01 18:28:34  [ main:845 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:845 ] - [ DEBUG ]  Found bean property 'messageTypes' of type [java.util.Set]
+2016-09-01 18:28:34  [ main:846 ] - [ DEBUG ]  Finished creating instance of bean 'protocolCodecFactory'
+2016-09-01 18:28:34  [ main:847 ] - [ DEBUG ]  Creating shared instance of singleton bean 'minaIoHandler'
+2016-09-01 18:28:34  [ main:847 ] - [ DEBUG ]  Creating instance of bean 'minaIoHandler'
+2016-09-01 18:28:34  [ main:860 ] - [ DEBUG ]  Registered injected element on class [com.wk.loginserver.handler.DefaultMinaIoHandler]: AutowiredFieldElement for private com.wk.net.action.ActionDispatcher com.wk.loginserver.handler.DefaultMinaIoHandler.actionDispatcher
+2016-09-01 18:28:34  [ main:860 ] - [ DEBUG ]  Eagerly caching bean 'minaIoHandler' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:861 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.loginserver.handler.DefaultMinaIoHandler]
+2016-09-01 18:28:34  [ main:863 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.loginserver.handler.DefaultMinaIoHandler]
+2016-09-01 18:28:34  [ main:863 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:869 ] - [ DEBUG ]  Processing injected element of bean 'minaIoHandler': AutowiredFieldElement for private com.wk.net.action.ActionDispatcher com.wk.loginserver.handler.DefaultMinaIoHandler.actionDispatcher
+2016-09-01 18:28:34  [ main:879 ] - [ DEBUG ]  Creating shared instance of singleton bean 'actionDispatcher'
+2016-09-01 18:28:34  [ main:880 ] - [ DEBUG ]  Creating instance of bean 'actionDispatcher'
+2016-09-01 18:28:34  [ main:881 ] - [ DEBUG ]  Eagerly caching bean 'actionDispatcher' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:881 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.net.action.support.DefaultActionDispatcher]
+2016-09-01 18:28:34  [ main:883 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.net.action.support.DefaultActionDispatcher]
+2016-09-01 18:28:34  [ main:888 ] - [ DEBUG ]  Found bean property 'actionFactory' of type [com.wk.net.action.ActionFactory]
+2016-09-01 18:28:34  [ main:888 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:889 ] - [ DEBUG ]  Found bean property 'filterChainFactory' of type [com.wk.net.filter.FilterChainFactory]
+2016-09-01 18:28:34  [ main:892 ] - [ DEBUG ]  Creating shared instance of singleton bean 'filterChainFactory'
+2016-09-01 18:28:34  [ main:892 ] - [ DEBUG ]  Creating instance of bean 'filterChainFactory'
+2016-09-01 18:28:34  [ main:897 ] - [ DEBUG ]  Eagerly caching bean 'filterChainFactory' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:897 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.net.filter.support.DefaultFilterChainFactory]
+2016-09-01 18:28:34  [ main:899 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.net.filter.support.DefaultFilterChainFactory]
+2016-09-01 18:28:34  [ main:899 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:900 ] - [ DEBUG ]  Found bean property 'filterList' of type [java.util.List]
+2016-09-01 18:28:34  [ main:901 ] - [ DEBUG ]  Creating shared instance of singleton bean 'capabilityMonitor'
+2016-09-01 18:28:34  [ main:902 ] - [ DEBUG ]  Creating instance of bean 'capabilityMonitor'
+2016-09-01 18:28:34  [ main:906 ] - [ DEBUG ]  Eagerly caching bean 'capabilityMonitor' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:906 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.net.filter.support.CapabilityMonitor]
+2016-09-01 18:28:34  [ main:908 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.net.filter.support.CapabilityMonitor]
+2016-09-01 18:28:34  [ main:909 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:909 ] - [ DEBUG ]  Found bean property 'interval' of type [long]
+2016-09-01 18:28:34  [ main:909 ] - [ DEBUG ]  Found bean property 'monitor' of type [int]
+2016-09-01 18:28:34  [ main:910 ] - [ DEBUG ]  Found bean property 'monitorType' of type [int]
+2016-09-01 18:28:34  [ main:920 ] - [ DEBUG ]  Converting String to [long] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7fe8ea47]
+2016-09-01 18:28:34  [ main:922 ] - [ DEBUG ]  Invoking init method  'init' on bean with name 'capabilityMonitor'
+2016-09-01 18:28:34  [ main:923 ] - [ DEBUG ]  Finished creating instance of bean 'capabilityMonitor'
+2016-09-01 18:28:34  [ main:923 ] - [ DEBUG ]  Creating shared instance of singleton bean 'commandFilter'
+2016-09-01 18:28:34  [ main:923 ] - [ DEBUG ]  Creating instance of bean 'commandFilter'
+2016-09-01 18:28:34  [ main:924 ] - [ DEBUG ]  Eagerly caching bean 'commandFilter' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:925 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.net.filter.support.CommandCollectFilter]
+2016-09-01 18:28:34  [ main:926 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.net.filter.support.CommandCollectFilter]
+2016-09-01 18:28:34  [ main:926 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:927 ] - [ DEBUG ]  Found bean property 'destinationName' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:928 ] - [ DEBUG ]  Invoking init method  'init' on bean with name 'commandFilter'
+2016-09-01 18:28:34  [ main:928 ] - [ DEBUG ]  Finished creating instance of bean 'commandFilter'
+2016-09-01 18:28:34  [ main:937 ] - [ DEBUG ]  Finished creating instance of bean 'filterChainFactory'
+2016-09-01 18:28:34  [ main:937 ] - [ DEBUG ]  Creating shared instance of singleton bean 'actionFactory'
+2016-09-01 18:28:34  [ main:938 ] - [ DEBUG ]  Creating instance of bean 'actionFactory'
+2016-09-01 18:28:34  [ main:951 ] - [ DEBUG ]  Eagerly caching bean 'actionFactory' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:952 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.net.action.support.DefaultActionFactory]
+2016-09-01 18:28:34  [ main:953 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.net.action.support.DefaultActionFactory]
+2016-09-01 18:28:34  [ main:953 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:954 ] - [ DEBUG ]  Finished creating instance of bean 'actionFactory'
+2016-09-01 18:28:34  [ main:955 ] - [ DEBUG ]  Finished creating instance of bean 'actionDispatcher'
+2016-09-01 18:28:34  [ main:956 ] - [ DEBUG ]  Autowiring by type from bean name 'minaIoHandler' to bean named 'actionDispatcher'
+2016-09-01 18:28:34  [ main:956 ] - [ DEBUG ]  Finished creating instance of bean 'minaIoHandler'
+2016-09-01 18:28:34  [ main:957 ] - [ DEBUG ]  Creating shared instance of singleton bean 'minaServer'
+2016-09-01 18:28:34  [ main:957 ] - [ DEBUG ]  Creating instance of bean 'minaServer'
+2016-09-01 18:28:34  [ main:960 ] - [ DEBUG ]  Registered injected element on class [com.wk.loginserver.MinaServer]: AutowiredFieldElement for private org.apache.mina.filter.codec.ProtocolCodecFactory com.wk.loginserver.MinaServer.protocolCodecFactory
+2016-09-01 18:28:34  [ main:960 ] - [ DEBUG ]  Registered injected element on class [com.wk.loginserver.MinaServer]: AutowiredFieldElement for private com.wk.config.AppConfig com.wk.loginserver.MinaServer.appConfig
+2016-09-01 18:28:34  [ main:961 ] - [ DEBUG ]  Registered injected element on class [com.wk.loginserver.MinaServer]: AutowiredFieldElement for private org.apache.mina.core.service.IoHandler com.wk.loginserver.MinaServer.handler
+2016-09-01 18:28:34  [ main:961 ] - [ DEBUG ]  Eagerly caching bean 'minaServer' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:961 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.loginserver.MinaServer]
+2016-09-01 18:28:34  [ main:963 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.loginserver.MinaServer]
+2016-09-01 18:28:34  [ main:963 ] - [ DEBUG ]  Found bean property 'acceptor' of type [org.apache.mina.core.service.IoAcceptor]
+2016-09-01 18:28:34  [ main:964 ] - [ DEBUG ]  Found bean property 'address' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:964 ] - [ DEBUG ]  Found bean property 'appConfig' of type [com.wk.config.AppConfig]
+2016-09-01 18:28:34  [ main:964 ] - [ DEBUG ]  Found bean property 'bothIdleMaxTime' of type [int]
+2016-09-01 18:28:34  [ main:966 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:968 ] - [ DEBUG ]  Found bean property 'connectionInterval' of type [int]
+2016-09-01 18:28:34  [ main:968 ] - [ DEBUG ]  Found bean property 'corePoolSize' of type [int]
+2016-09-01 18:28:34  [ main:968 ] - [ DEBUG ]  Found bean property 'keepAliveTime' of type [int]
+2016-09-01 18:28:34  [ main:968 ] - [ DEBUG ]  Found bean property 'maximumPoolSize' of type [int]
+2016-09-01 18:28:34  [ main:968 ] - [ DEBUG ]  Found bean property 'port' of type [int]
+2016-09-01 18:28:34  [ main:969 ] - [ DEBUG ]  Found bean property 'queueSize' of type [int]
+2016-09-01 18:28:34  [ main:969 ] - [ DEBUG ]  Found bean property 'readerIdleMaxTime' of type [int]
+2016-09-01 18:28:34  [ main:969 ] - [ DEBUG ]  Found bean property 'writerIdleMaxTime' of type [int]
+2016-09-01 18:28:34  [ main:969 ] - [ DEBUG ]  Processing injected element of bean 'minaServer': AutowiredFieldElement for private org.apache.mina.filter.codec.ProtocolCodecFactory com.wk.loginserver.MinaServer.protocolCodecFactory
+2016-09-01 18:28:34  [ main:977 ] - [ DEBUG ]  Returning cached instance of singleton bean 'protocolCodecFactory'
+2016-09-01 18:28:34  [ main:978 ] - [ DEBUG ]  Autowiring by type from bean name 'minaServer' to bean named 'protocolCodecFactory'
+2016-09-01 18:28:34  [ main:978 ] - [ DEBUG ]  Processing injected element of bean 'minaServer': AutowiredFieldElement for private com.wk.config.AppConfig com.wk.loginserver.MinaServer.appConfig
+2016-09-01 18:28:34  [ main:979 ] - [ DEBUG ]  Creating shared instance of singleton bean 'appConfig'
+2016-09-01 18:28:34  [ main:979 ] - [ DEBUG ]  Creating instance of bean 'appConfig'
+2016-09-01 18:28:34  [ main:981 ] - [ DEBUG ]  Eagerly caching bean 'appConfig' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:982 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.config.AppConfig]
+2016-09-01 18:28:34  [ main:984 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.config.AppConfig]
+2016-09-01 18:28:34  [ main:984 ] - [ DEBUG ]  Found bean property 'appId' of type [int]
+2016-09-01 18:28:34  [ main:984 ] - [ DEBUG ]  Found bean property 'bankServerAddress' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:986 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:987 ] - [ DEBUG ]  Found bean property 'createRoleAble' of type [byte]
+2016-09-01 18:28:34  [ main:987 ] - [ DEBUG ]  Found bean property 'fileName' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:987 ] - [ DEBUG ]  Found bean property 'maxOnlineRole' of type [int]
+2016-09-01 18:28:34  [ main:987 ] - [ DEBUG ]  Found bean property 'maxRoleLevel' of type [int]
+2016-09-01 18:28:34  [ main:990 ] - [ DEBUG ]  Found bean property 'updateAddress' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:990 ] - [ DEBUG ]  Found bean property 'version' of type [java.lang.String]
+2016-09-01 18:28:34  [ main:992 ] - [ DEBUG ]  Invoking init method  'init' on bean with name 'appConfig'
+2016-09-01 18:28:34  [ main:997 ] - [ DEBUG ]  Finished creating instance of bean 'appConfig'
+2016-09-01 18:28:34  [ main:998 ] - [ DEBUG ]  Autowiring by type from bean name 'minaServer' to bean named 'appConfig'
+2016-09-01 18:28:34  [ main:998 ] - [ DEBUG ]  Processing injected element of bean 'minaServer': AutowiredFieldElement for private org.apache.mina.core.service.IoHandler com.wk.loginserver.MinaServer.handler
+2016-09-01 18:28:34  [ main:999 ] - [ DEBUG ]  Returning cached instance of singleton bean 'minaIoHandler'
+2016-09-01 18:28:34  [ main:1000 ] - [ DEBUG ]  Autowiring by type from bean name 'minaServer' to bean named 'minaIoHandler'
+2016-09-01 18:28:34  [ main:1000 ] - [ DEBUG ]  Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7f77e91b]
+2016-09-01 18:28:34  [ main:1001 ] - [ DEBUG ]  Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7f77e91b]
+2016-09-01 18:28:34  [ main:1002 ] - [ DEBUG ]  Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7f77e91b]
+2016-09-01 18:28:34  [ main:1002 ] - [ DEBUG ]  Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7f77e91b]
+2016-09-01 18:28:34  [ main:1002 ] - [ DEBUG ]  Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7f77e91b]
+2016-09-01 18:28:34  [ main:1003 ] - [ DEBUG ]  Finished creating instance of bean 'minaServer'
+2016-09-01 18:28:34  [ main:1004 ] - [ DEBUG ]  Returning cached instance of singleton bean 'actionFactory'
+2016-09-01 18:28:34  [ main:1005 ] - [ DEBUG ]  Returning cached instance of singleton bean 'actionDispatcher'
+2016-09-01 18:28:34  [ main:1005 ] - [ DEBUG ]  Returning cached instance of singleton bean 'filterChainFactory'
+2016-09-01 18:28:34  [ main:1005 ] - [ DEBUG ]  Returning cached instance of singleton bean 'commandFilter'
+2016-09-01 18:28:34  [ main:1005 ] - [ DEBUG ]  Returning cached instance of singleton bean 'capabilityMonitor'
+2016-09-01 18:28:34  [ main:1005 ] - [ DEBUG ]  Returning cached instance of singleton bean 'appConfig'
+2016-09-01 18:28:34  [ main:1005 ] - [ DEBUG ]  Creating shared instance of singleton bean 'service'
+2016-09-01 18:28:34  [ main:1006 ] - [ DEBUG ]  Creating instance of bean 'service'
+2016-09-01 18:28:34  [ main:1006 ] - [ DEBUG ]  Registered injected element on class [com.wk.loginserver.entity.Service]: AutowiredFieldElement for private com.wk.loginserver.entity.Test com.wk.loginserver.entity.Service.test
+2016-09-01 18:28:34  [ main:1007 ] - [ DEBUG ]  Eagerly caching bean 'service' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:1007 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.loginserver.entity.Service]
+2016-09-01 18:28:34  [ main:1008 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.loginserver.entity.Service]
+2016-09-01 18:28:34  [ main:1009 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:1011 ] - [ DEBUG ]  Processing injected element of bean 'service': AutowiredFieldElement for private com.wk.loginserver.entity.Test com.wk.loginserver.entity.Service.test
+2016-09-01 18:28:34  [ main:1012 ] - [ DEBUG ]  Returning cached instance of singleton bean 'test'
+2016-09-01 18:28:34  [ main:1012 ] - [ DEBUG ]  Autowiring by type from bean name 'service' to bean named 'test'
+2016-09-01 18:28:34  [ main:1012 ] - [ DEBUG ]  Finished creating instance of bean 'service'
+2016-09-01 18:28:34  [ main:1013 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 18:28:34  [ main:1013 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 18:28:34  [ main:1013 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 18:28:34  [ main:1013 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 18:28:34  [ main:1013 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2016-09-01 18:28:34  [ main:1013 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2016-09-01 18:28:34  [ main:1015 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:1015 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.context.event.EventListenerMethodProcessor]
+2016-09-01 18:28:34  [ main:1017 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.context.event.EventListenerMethodProcessor]
+2016-09-01 18:28:34  [ main:1017 ] - [ DEBUG ]  Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2016-09-01 18:28:34  [ main:1017 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:1019 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2016-09-01 18:28:34  [ main:1019 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2016-09-01 18:28:34  [ main:1019 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2016-09-01 18:28:34  [ main:1020 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2016-09-01 18:28:34  [ main:1020 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.context.event.DefaultEventListenerFactory]
+2016-09-01 18:28:34  [ main:1022 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.context.event.DefaultEventListenerFactory]
+2016-09-01 18:28:34  [ main:1022 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:28:34  [ main:1023 ] - [ DEBUG ]  Found bean property 'order' of type [int]
+2016-09-01 18:28:34  [ main:1024 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2016-09-01 18:28:34  [ main:1024 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 18:28:34  [ main:1025 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 18:28:34  [ main:1025 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2016-09-01 18:28:34  [ main:1038 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.beans.factory.config.PropertyPlaceholderConfigurer
+2016-09-01 18:28:34  [ main:1038 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.loginserver.entity.Test
+2016-09-01 18:28:34  [ main:1039 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.net.DefaultDemuxingProtocolCodecFactory
+2016-09-01 18:28:34  [ main:1040 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.loginserver.handler.DefaultMinaIoHandler
+2016-09-01 18:28:34  [ main:1040 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.loginserver.MinaServer
+2016-09-01 18:28:34  [ main:1040 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.net.action.support.DefaultActionFactory
+2016-09-01 18:28:34  [ main:1041 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.net.action.support.DefaultActionDispatcher
+2016-09-01 18:28:34  [ main:1041 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.net.filter.support.DefaultFilterChainFactory
+2016-09-01 18:28:34  [ main:1042 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.net.filter.support.CommandCollectFilter
+2016-09-01 18:28:34  [ main:1042 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.net.filter.support.CapabilityMonitor
+2016-09-01 18:28:34  [ main:1043 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.config.AppConfig
+2016-09-01 18:28:34  [ main:1043 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.loginserver.entity.Service
+2016-09-01 18:28:34  [ main:1044 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.annotation.ConfigurationClassPostProcessor
+2016-09-01 18:28:34  [ main:1045 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor
+2016-09-01 18:28:34  [ main:1046 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor
+2016-09-01 18:28:34  [ main:1050 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.annotation.CommonAnnotationBeanPostProcessor
+2016-09-01 18:28:34  [ main:1055 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.event.EventListenerMethodProcessor
+2016-09-01 18:28:34  [ main:1057 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.event.DefaultEventListenerFactory
+2016-09-01 18:28:34  [ main:1061 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor
+2016-09-01 18:28:34  [ main:1062 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.annotation.ConfigurationClassPostProcessor$EnhancedConfigurationBeanPostProcessor
+2016-09-01 18:28:34  [ main:1068 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.core.env.StandardEnvironment
+2016-09-01 18:28:34  [ main:1072 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class java.util.Properties
+2016-09-01 18:28:34  [ main:1073 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class java.util.Collections$UnmodifiableMap
+2016-09-01 18:28:34  [ main:1076 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.support.DelegatingMessageSource
+2016-09-01 18:28:34  [ main:1078 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.event.SimpleApplicationEventMulticaster
+2016-09-01 18:28:34  [ main:1083 ] - [ DEBUG ]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@5b0abc94]
+2016-09-01 18:28:34  [ main:1084 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-09-01 18:28:34  [ main:1084 ] - [ DEBUG ]  Publishing event in org.springframework.context.support.FileSystemXmlApplicationContext@7637f22: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.FileSystemXmlApplicationContext@7637f22: startup date [Thu Sep 01 18:28:33 CST 2016]; root of context hierarchy]
+2016-09-01 18:28:34  [ main:1088 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2016-09-01 18:28:34  [ main:1088 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2016-09-01 18:28:34  [ main:1089 ] - [ DEBUG ]  Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+2016-09-01 18:28:34  [ main:1091 ] - [ DEBUG ]  Returning cached instance of singleton bean 'minaServer'
+2016-09-01 18:28:35  [ main:1221 ] - [ ERROR ]  <-Failed to start AppServer->
+java.io.IOException: Error while binding on /192.168.1.107:8888
+original message : Can't assign requested address
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:238)
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:51)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor.registerHandles(AbstractPollingIoAcceptor.java:585)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor.access$400(AbstractPollingIoAcceptor.java:71)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.run(AbstractPollingIoAcceptor.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-01 18:29:20  [ main:0 ] - [ DEBUG ]  /resources/config/serverCfg/spring-application.xml
+2016-09-01 18:29:20  [ main:143 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-01 18:29:20  [ main:145 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-01 18:29:20  [ main:146 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-01 18:29:20  [ main:150 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@7637f22: startup date [Thu Sep 01 18:29:20 CST 2016]; root of context hierarchy
+2016-09-01 18:29:20  [ main:178 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-01 18:29:20  [ main:179 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-01 18:29:20  [ main:180 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-01 18:29:20  [ main:191 ] - [ INFO ]  Loading XML bean definitions from file [/Users/wukai/Documents/GitWork/server/resources/config/serverCfg/spring-application.xml]
+2016-09-01 18:29:20  [ main:206 ] - [ DEBUG ]  Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2016-09-01 18:29:20  [ main:236 ] - [ DEBUG ]  Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans-4.3.xsd]
+2016-09-01 18:29:20  [ main:236 ] - [ DEBUG ]  Loading schema mappings from [META-INF/spring.schemas]
+2016-09-01 18:29:20  [ main:243 ] - [ DEBUG ]  Loaded schema mappings: {http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.3.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/context/spring-context-4.3.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-4.3.xsd=org/springframework/aop/config/spring-aop-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-4.3.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.3.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-4.3.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-4.3.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-4.3.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/task/spring-task-4.3.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.3.xsd}
+2016-09-01 18:29:20  [ main:247 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans-4.3.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.3.xsd
+2016-09-01 18:29:20  [ main:297 ] - [ DEBUG ]  Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/context/spring-context-4.3.xsd]
+2016-09-01 18:29:20  [ main:298 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/context/spring-context-4.3.xsd] in classpath: org/springframework/context/config/spring-context-4.3.xsd
+2016-09-01 18:29:20  [ main:306 ] - [ DEBUG ]  Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/tool/spring-tool-4.3.xsd]
+2016-09-01 18:29:20  [ main:307 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.3.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.3.xsd
+2016-09-01 18:29:21  [ main:319 ] - [ DEBUG ]  Loading bean definitions
+2016-09-01 18:29:21  [ main:343 ] - [ DEBUG ]  Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2016-09-01 18:29:21  [ main:362 ] - [ DEBUG ]  Loaded 18 bean definitions from location pattern [/resources/config/serverCfg/spring-application.xml]
+2016-09-01 18:29:21  [ main:363 ] - [ DEBUG ]  Bean factory for org.springframework.context.support.FileSystemXmlApplicationContext@7637f22: org.springframework.beans.factory.support.DefaultListableBeanFactory@4e1d422d: defining beans [propertyConfigurer,test,protocolCodecFactory,minaIoHandler,minaServer,actionFactory,actionDispatcher,filterChainFactory,commandFilter,capabilityMonitor,appConfig,service,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory]; root of factory hierarchy
+2016-09-01 18:29:21  [ main:393 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 18:29:21  [ main:393 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 18:29:21  [ main:418 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:421 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 18:29:21  [ main:471 ] - [ DEBUG ]  Creating shared instance of singleton bean 'propertyConfigurer'
+2016-09-01 18:29:21  [ main:471 ] - [ DEBUG ]  Creating instance of bean 'propertyConfigurer'
+2016-09-01 18:29:21  [ main:474 ] - [ DEBUG ]  Eagerly caching bean 'propertyConfigurer' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:483 ] - [ DEBUG ]  Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2016-09-01 18:29:21  [ main:484 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]
+2016-09-01 18:29:21  [ main:493 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]
+2016-09-01 18:29:21  [ main:493 ] - [ DEBUG ]  Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2016-09-01 18:29:21  [ main:500 ] - [ DEBUG ]  Found bean property 'beanName' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:501 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:502 ] - [ DEBUG ]  Found bean property 'fileEncoding' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:503 ] - [ DEBUG ]  Found bean property 'ignoreResourceNotFound' of type [boolean]
+2016-09-01 18:29:21  [ main:503 ] - [ DEBUG ]  Found bean property 'ignoreUnresolvablePlaceholders' of type [boolean]
+2016-09-01 18:29:21  [ main:504 ] - [ DEBUG ]  Found bean property 'localOverride' of type [boolean]
+2016-09-01 18:29:21  [ main:504 ] - [ DEBUG ]  Found bean property 'location' of type [org.springframework.core.io.Resource]
+2016-09-01 18:29:21  [ main:505 ] - [ DEBUG ]  Found bean property 'locations' of type [[Lorg.springframework.core.io.Resource;]
+2016-09-01 18:29:21  [ main:505 ] - [ DEBUG ]  Found bean property 'nullValue' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:506 ] - [ DEBUG ]  Found bean property 'order' of type [int]
+2016-09-01 18:29:21  [ main:507 ] - [ DEBUG ]  Found bean property 'placeholderPrefix' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:508 ] - [ DEBUG ]  Found bean property 'placeholderSuffix' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:509 ] - [ DEBUG ]  Found bean property 'properties' of type [java.util.Properties]
+2016-09-01 18:29:21  [ main:511 ] - [ DEBUG ]  Found bean property 'propertiesArray' of type [[Ljava.util.Properties;]
+2016-09-01 18:29:21  [ main:512 ] - [ DEBUG ]  Found bean property 'propertiesPersister' of type [org.springframework.util.PropertiesPersister]
+2016-09-01 18:29:21  [ main:512 ] - [ DEBUG ]  Found bean property 'searchSystemEnvironment' of type [boolean]
+2016-09-01 18:29:21  [ main:513 ] - [ DEBUG ]  Found bean property 'systemPropertiesMode' of type [int]
+2016-09-01 18:29:21  [ main:513 ] - [ DEBUG ]  Found bean property 'systemPropertiesModeName' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:513 ] - [ DEBUG ]  Found bean property 'trimValues' of type [boolean]
+2016-09-01 18:29:21  [ main:514 ] - [ DEBUG ]  Found bean property 'valueSeparator' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:518 ] - [ DEBUG ]  Finished creating instance of bean 'propertyConfigurer'
+2016-09-01 18:29:21  [ main:519 ] - [ INFO ]  Loading properties file from file [/Users/wukai/Documents/GitWork/server/resources/config/properties/appConfig.properties]
+2016-09-01 18:29:21  [ main:519 ] - [ INFO ]  Loading properties file from file [/Users/wukai/Documents/GitWork/server/resources/config/properties/server.properties]
+2016-09-01 18:29:21  [ main:520 ] - [ INFO ]  Loading properties file from file [/Users/wukai/Documents/GitWork/server/resources/config/properties/jdbc.properties]
+2016-09-01 18:29:21  [ main:520 ] - [ INFO ]  Loading properties file from file [/Users/wukai/Documents/GitWork/server/resources/config/properties/test.properties]
+2016-09-01 18:29:21  [ main:524 ] - [ DEBUG ]  Resolved placeholder 'root'
+2016-09-01 18:29:21  [ main:525 ] - [ DEBUG ]  Resolved placeholder 'current.appid'
+2016-09-01 18:29:21  [ main:525 ] - [ DEBUG ]  Resolved placeholder 'address'
+2016-09-01 18:29:21  [ main:525 ] - [ DEBUG ]  Resolved placeholder 'port'
+2016-09-01 18:29:21  [ main:526 ] - [ DEBUG ]  Resolved placeholder 'connectionInterval'
+2016-09-01 18:29:21  [ main:526 ] - [ DEBUG ]  Resolved placeholder 'readerIdleMaxTime'
+2016-09-01 18:29:21  [ main:526 ] - [ DEBUG ]  Resolved placeholder 'writerIdleMaxTime'
+2016-09-01 18:29:21  [ main:527 ] - [ DEBUG ]  Resolved placeholder 'bothIdleMaxTime'
+2016-09-01 18:29:21  [ main:530 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 18:29:21  [ main:530 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 18:29:21  [ main:532 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:532 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 18:29:21  [ main:532 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 18:29:21  [ main:532 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 18:29:21  [ main:533 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:533 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 18:29:21  [ main:533 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 18:29:21  [ main:533 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 18:29:21  [ main:537 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:538 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 18:29:21  [ main:539 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 18:29:21  [ main:539 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 18:29:21  [ main:539 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:539 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 18:29:21  [ main:540 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 18:29:21  [ main:540 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 18:29:21  [ main:540 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:540 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 18:29:21  [ main:544 ] - [ DEBUG ]  Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@5e955596]
+2016-09-01 18:29:21  [ main:547 ] - [ DEBUG ]  Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@6c9f5c0d]
+2016-09-01 18:29:21  [ main:549 ] - [ DEBUG ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4e1d422d: defining beans [propertyConfigurer,test,protocolCodecFactory,minaIoHandler,minaServer,actionFactory,actionDispatcher,filterChainFactory,commandFilter,capabilityMonitor,appConfig,service,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+2016-09-01 18:29:21  [ main:549 ] - [ DEBUG ]  Returning cached instance of singleton bean 'propertyConfigurer'
+2016-09-01 18:29:21  [ main:549 ] - [ DEBUG ]  Creating shared instance of singleton bean 'test'
+2016-09-01 18:29:21  [ main:550 ] - [ DEBUG ]  Creating instance of bean 'test'
+2016-09-01 18:29:21  [ main:553 ] - [ DEBUG ]  Eagerly caching bean 'test' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:554 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.loginserver.entity.Test]
+2016-09-01 18:29:21  [ main:555 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.loginserver.entity.Test]
+2016-09-01 18:29:21  [ main:556 ] - [ DEBUG ]  Found bean property 'appId' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:556 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:556 ] - [ DEBUG ]  Found bean property 'test' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:559 ] - [ DEBUG ]  Finished creating instance of bean 'test'
+2016-09-01 18:29:21  [ main:559 ] - [ DEBUG ]  Creating shared instance of singleton bean 'protocolCodecFactory'
+2016-09-01 18:29:21  [ main:559 ] - [ DEBUG ]  Creating instance of bean 'protocolCodecFactory'
+2016-09-01 18:29:21  [ main:568 ] - [ DEBUG ]  Eagerly caching bean 'protocolCodecFactory' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:568 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.net.DefaultDemuxingProtocolCodecFactory]
+2016-09-01 18:29:21  [ main:580 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.net.DefaultDemuxingProtocolCodecFactory]
+2016-09-01 18:29:21  [ main:581 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:581 ] - [ DEBUG ]  Found bean property 'messageTypes' of type [java.util.Set]
+2016-09-01 18:29:21  [ main:582 ] - [ DEBUG ]  Finished creating instance of bean 'protocolCodecFactory'
+2016-09-01 18:29:21  [ main:582 ] - [ DEBUG ]  Creating shared instance of singleton bean 'minaIoHandler'
+2016-09-01 18:29:21  [ main:582 ] - [ DEBUG ]  Creating instance of bean 'minaIoHandler'
+2016-09-01 18:29:21  [ main:589 ] - [ DEBUG ]  Registered injected element on class [com.wk.loginserver.handler.DefaultMinaIoHandler]: AutowiredFieldElement for private com.wk.net.action.ActionDispatcher com.wk.loginserver.handler.DefaultMinaIoHandler.actionDispatcher
+2016-09-01 18:29:21  [ main:590 ] - [ DEBUG ]  Eagerly caching bean 'minaIoHandler' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:590 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.loginserver.handler.DefaultMinaIoHandler]
+2016-09-01 18:29:21  [ main:592 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.loginserver.handler.DefaultMinaIoHandler]
+2016-09-01 18:29:21  [ main:592 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:593 ] - [ DEBUG ]  Processing injected element of bean 'minaIoHandler': AutowiredFieldElement for private com.wk.net.action.ActionDispatcher com.wk.loginserver.handler.DefaultMinaIoHandler.actionDispatcher
+2016-09-01 18:29:21  [ main:600 ] - [ DEBUG ]  Creating shared instance of singleton bean 'actionDispatcher'
+2016-09-01 18:29:21  [ main:600 ] - [ DEBUG ]  Creating instance of bean 'actionDispatcher'
+2016-09-01 18:29:21  [ main:601 ] - [ DEBUG ]  Eagerly caching bean 'actionDispatcher' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:601 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.net.action.support.DefaultActionDispatcher]
+2016-09-01 18:29:21  [ main:602 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.net.action.support.DefaultActionDispatcher]
+2016-09-01 18:29:21  [ main:602 ] - [ DEBUG ]  Found bean property 'actionFactory' of type [com.wk.net.action.ActionFactory]
+2016-09-01 18:29:21  [ main:602 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:603 ] - [ DEBUG ]  Found bean property 'filterChainFactory' of type [com.wk.net.filter.FilterChainFactory]
+2016-09-01 18:29:21  [ main:603 ] - [ DEBUG ]  Creating shared instance of singleton bean 'filterChainFactory'
+2016-09-01 18:29:21  [ main:604 ] - [ DEBUG ]  Creating instance of bean 'filterChainFactory'
+2016-09-01 18:29:21  [ main:605 ] - [ DEBUG ]  Eagerly caching bean 'filterChainFactory' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:605 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.net.filter.support.DefaultFilterChainFactory]
+2016-09-01 18:29:21  [ main:607 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.net.filter.support.DefaultFilterChainFactory]
+2016-09-01 18:29:21  [ main:607 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:607 ] - [ DEBUG ]  Found bean property 'filterList' of type [java.util.List]
+2016-09-01 18:29:21  [ main:608 ] - [ DEBUG ]  Creating shared instance of singleton bean 'capabilityMonitor'
+2016-09-01 18:29:21  [ main:608 ] - [ DEBUG ]  Creating instance of bean 'capabilityMonitor'
+2016-09-01 18:29:21  [ main:610 ] - [ DEBUG ]  Eagerly caching bean 'capabilityMonitor' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:611 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.net.filter.support.CapabilityMonitor]
+2016-09-01 18:29:21  [ main:612 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.net.filter.support.CapabilityMonitor]
+2016-09-01 18:29:21  [ main:612 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:613 ] - [ DEBUG ]  Found bean property 'interval' of type [long]
+2016-09-01 18:29:21  [ main:613 ] - [ DEBUG ]  Found bean property 'monitor' of type [int]
+2016-09-01 18:29:21  [ main:613 ] - [ DEBUG ]  Found bean property 'monitorType' of type [int]
+2016-09-01 18:29:21  [ main:620 ] - [ DEBUG ]  Converting String to [long] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7fe8ea47]
+2016-09-01 18:29:21  [ main:622 ] - [ DEBUG ]  Invoking init method  'init' on bean with name 'capabilityMonitor'
+2016-09-01 18:29:21  [ main:622 ] - [ DEBUG ]  Finished creating instance of bean 'capabilityMonitor'
+2016-09-01 18:29:21  [ main:622 ] - [ DEBUG ]  Creating shared instance of singleton bean 'commandFilter'
+2016-09-01 18:29:21  [ main:622 ] - [ DEBUG ]  Creating instance of bean 'commandFilter'
+2016-09-01 18:29:21  [ main:623 ] - [ DEBUG ]  Eagerly caching bean 'commandFilter' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:623 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.net.filter.support.CommandCollectFilter]
+2016-09-01 18:29:21  [ main:625 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.net.filter.support.CommandCollectFilter]
+2016-09-01 18:29:21  [ main:625 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:626 ] - [ DEBUG ]  Found bean property 'destinationName' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:627 ] - [ DEBUG ]  Invoking init method  'init' on bean with name 'commandFilter'
+2016-09-01 18:29:21  [ main:627 ] - [ DEBUG ]  Finished creating instance of bean 'commandFilter'
+2016-09-01 18:29:21  [ main:636 ] - [ DEBUG ]  Finished creating instance of bean 'filterChainFactory'
+2016-09-01 18:29:21  [ main:637 ] - [ DEBUG ]  Creating shared instance of singleton bean 'actionFactory'
+2016-09-01 18:29:21  [ main:637 ] - [ DEBUG ]  Creating instance of bean 'actionFactory'
+2016-09-01 18:29:21  [ main:644 ] - [ DEBUG ]  Eagerly caching bean 'actionFactory' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:645 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.net.action.support.DefaultActionFactory]
+2016-09-01 18:29:21  [ main:646 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.net.action.support.DefaultActionFactory]
+2016-09-01 18:29:21  [ main:646 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:648 ] - [ DEBUG ]  Finished creating instance of bean 'actionFactory'
+2016-09-01 18:29:21  [ main:648 ] - [ DEBUG ]  Finished creating instance of bean 'actionDispatcher'
+2016-09-01 18:29:21  [ main:649 ] - [ DEBUG ]  Autowiring by type from bean name 'minaIoHandler' to bean named 'actionDispatcher'
+2016-09-01 18:29:21  [ main:649 ] - [ DEBUG ]  Finished creating instance of bean 'minaIoHandler'
+2016-09-01 18:29:21  [ main:650 ] - [ DEBUG ]  Creating shared instance of singleton bean 'minaServer'
+2016-09-01 18:29:21  [ main:650 ] - [ DEBUG ]  Creating instance of bean 'minaServer'
+2016-09-01 18:29:21  [ main:654 ] - [ DEBUG ]  Registered injected element on class [com.wk.loginserver.MinaServer]: AutowiredFieldElement for private org.apache.mina.filter.codec.ProtocolCodecFactory com.wk.loginserver.MinaServer.protocolCodecFactory
+2016-09-01 18:29:21  [ main:654 ] - [ DEBUG ]  Registered injected element on class [com.wk.loginserver.MinaServer]: AutowiredFieldElement for private com.wk.config.AppConfig com.wk.loginserver.MinaServer.appConfig
+2016-09-01 18:29:21  [ main:655 ] - [ DEBUG ]  Registered injected element on class [com.wk.loginserver.MinaServer]: AutowiredFieldElement for private org.apache.mina.core.service.IoHandler com.wk.loginserver.MinaServer.handler
+2016-09-01 18:29:21  [ main:655 ] - [ DEBUG ]  Eagerly caching bean 'minaServer' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:655 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.loginserver.MinaServer]
+2016-09-01 18:29:21  [ main:657 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.loginserver.MinaServer]
+2016-09-01 18:29:21  [ main:658 ] - [ DEBUG ]  Found bean property 'acceptor' of type [org.apache.mina.core.service.IoAcceptor]
+2016-09-01 18:29:21  [ main:658 ] - [ DEBUG ]  Found bean property 'address' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:658 ] - [ DEBUG ]  Found bean property 'appConfig' of type [com.wk.config.AppConfig]
+2016-09-01 18:29:21  [ main:658 ] - [ DEBUG ]  Found bean property 'bothIdleMaxTime' of type [int]
+2016-09-01 18:29:21  [ main:659 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:659 ] - [ DEBUG ]  Found bean property 'connectionInterval' of type [int]
+2016-09-01 18:29:21  [ main:659 ] - [ DEBUG ]  Found bean property 'corePoolSize' of type [int]
+2016-09-01 18:29:21  [ main:659 ] - [ DEBUG ]  Found bean property 'keepAliveTime' of type [int]
+2016-09-01 18:29:21  [ main:660 ] - [ DEBUG ]  Found bean property 'maximumPoolSize' of type [int]
+2016-09-01 18:29:21  [ main:661 ] - [ DEBUG ]  Found bean property 'port' of type [int]
+2016-09-01 18:29:21  [ main:661 ] - [ DEBUG ]  Found bean property 'queueSize' of type [int]
+2016-09-01 18:29:21  [ main:662 ] - [ DEBUG ]  Found bean property 'readerIdleMaxTime' of type [int]
+2016-09-01 18:29:21  [ main:662 ] - [ DEBUG ]  Found bean property 'writerIdleMaxTime' of type [int]
+2016-09-01 18:29:21  [ main:662 ] - [ DEBUG ]  Processing injected element of bean 'minaServer': AutowiredFieldElement for private org.apache.mina.filter.codec.ProtocolCodecFactory com.wk.loginserver.MinaServer.protocolCodecFactory
+2016-09-01 18:29:21  [ main:663 ] - [ DEBUG ]  Returning cached instance of singleton bean 'protocolCodecFactory'
+2016-09-01 18:29:21  [ main:663 ] - [ DEBUG ]  Autowiring by type from bean name 'minaServer' to bean named 'protocolCodecFactory'
+2016-09-01 18:29:21  [ main:663 ] - [ DEBUG ]  Processing injected element of bean 'minaServer': AutowiredFieldElement for private com.wk.config.AppConfig com.wk.loginserver.MinaServer.appConfig
+2016-09-01 18:29:21  [ main:664 ] - [ DEBUG ]  Creating shared instance of singleton bean 'appConfig'
+2016-09-01 18:29:21  [ main:664 ] - [ DEBUG ]  Creating instance of bean 'appConfig'
+2016-09-01 18:29:21  [ main:665 ] - [ DEBUG ]  Eagerly caching bean 'appConfig' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:665 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.config.AppConfig]
+2016-09-01 18:29:21  [ main:667 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.config.AppConfig]
+2016-09-01 18:29:21  [ main:667 ] - [ DEBUG ]  Found bean property 'appId' of type [int]
+2016-09-01 18:29:21  [ main:668 ] - [ DEBUG ]  Found bean property 'bankServerAddress' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:668 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:668 ] - [ DEBUG ]  Found bean property 'createRoleAble' of type [byte]
+2016-09-01 18:29:21  [ main:669 ] - [ DEBUG ]  Found bean property 'fileName' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:669 ] - [ DEBUG ]  Found bean property 'maxOnlineRole' of type [int]
+2016-09-01 18:29:21  [ main:669 ] - [ DEBUG ]  Found bean property 'maxRoleLevel' of type [int]
+2016-09-01 18:29:21  [ main:669 ] - [ DEBUG ]  Found bean property 'updateAddress' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:670 ] - [ DEBUG ]  Found bean property 'version' of type [java.lang.String]
+2016-09-01 18:29:21  [ main:671 ] - [ DEBUG ]  Invoking init method  'init' on bean with name 'appConfig'
+2016-09-01 18:29:21  [ main:671 ] - [ DEBUG ]  Finished creating instance of bean 'appConfig'
+2016-09-01 18:29:21  [ main:672 ] - [ DEBUG ]  Autowiring by type from bean name 'minaServer' to bean named 'appConfig'
+2016-09-01 18:29:21  [ main:672 ] - [ DEBUG ]  Processing injected element of bean 'minaServer': AutowiredFieldElement for private org.apache.mina.core.service.IoHandler com.wk.loginserver.MinaServer.handler
+2016-09-01 18:29:21  [ main:672 ] - [ DEBUG ]  Returning cached instance of singleton bean 'minaIoHandler'
+2016-09-01 18:29:21  [ main:673 ] - [ DEBUG ]  Autowiring by type from bean name 'minaServer' to bean named 'minaIoHandler'
+2016-09-01 18:29:21  [ main:673 ] - [ DEBUG ]  Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7f77e91b]
+2016-09-01 18:29:21  [ main:674 ] - [ DEBUG ]  Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7f77e91b]
+2016-09-01 18:29:21  [ main:674 ] - [ DEBUG ]  Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7f77e91b]
+2016-09-01 18:29:21  [ main:674 ] - [ DEBUG ]  Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7f77e91b]
+2016-09-01 18:29:21  [ main:675 ] - [ DEBUG ]  Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7f77e91b]
+2016-09-01 18:29:21  [ main:675 ] - [ DEBUG ]  Finished creating instance of bean 'minaServer'
+2016-09-01 18:29:21  [ main:675 ] - [ DEBUG ]  Returning cached instance of singleton bean 'actionFactory'
+2016-09-01 18:29:21  [ main:675 ] - [ DEBUG ]  Returning cached instance of singleton bean 'actionDispatcher'
+2016-09-01 18:29:21  [ main:676 ] - [ DEBUG ]  Returning cached instance of singleton bean 'filterChainFactory'
+2016-09-01 18:29:21  [ main:676 ] - [ DEBUG ]  Returning cached instance of singleton bean 'commandFilter'
+2016-09-01 18:29:21  [ main:676 ] - [ DEBUG ]  Returning cached instance of singleton bean 'capabilityMonitor'
+2016-09-01 18:29:21  [ main:676 ] - [ DEBUG ]  Returning cached instance of singleton bean 'appConfig'
+2016-09-01 18:29:21  [ main:676 ] - [ DEBUG ]  Creating shared instance of singleton bean 'service'
+2016-09-01 18:29:21  [ main:676 ] - [ DEBUG ]  Creating instance of bean 'service'
+2016-09-01 18:29:21  [ main:677 ] - [ DEBUG ]  Registered injected element on class [com.wk.loginserver.entity.Service]: AutowiredFieldElement for private com.wk.loginserver.entity.Test com.wk.loginserver.entity.Service.test
+2016-09-01 18:29:21  [ main:677 ] - [ DEBUG ]  Eagerly caching bean 'service' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:677 ] - [ DEBUG ]  Getting BeanInfo for class [com.wk.loginserver.entity.Service]
+2016-09-01 18:29:21  [ main:678 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.wk.loginserver.entity.Service]
+2016-09-01 18:29:21  [ main:678 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:678 ] - [ DEBUG ]  Processing injected element of bean 'service': AutowiredFieldElement for private com.wk.loginserver.entity.Test com.wk.loginserver.entity.Service.test
+2016-09-01 18:29:21  [ main:679 ] - [ DEBUG ]  Returning cached instance of singleton bean 'test'
+2016-09-01 18:29:21  [ main:679 ] - [ DEBUG ]  Autowiring by type from bean name 'service' to bean named 'test'
+2016-09-01 18:29:21  [ main:679 ] - [ DEBUG ]  Finished creating instance of bean 'service'
+2016-09-01 18:29:21  [ main:679 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 18:29:21  [ main:679 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 18:29:21  [ main:679 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 18:29:21  [ main:679 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 18:29:21  [ main:679 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2016-09-01 18:29:21  [ main:680 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2016-09-01 18:29:21  [ main:681 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:681 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.context.event.EventListenerMethodProcessor]
+2016-09-01 18:29:21  [ main:682 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.context.event.EventListenerMethodProcessor]
+2016-09-01 18:29:21  [ main:682 ] - [ DEBUG ]  Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2016-09-01 18:29:21  [ main:682 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:683 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2016-09-01 18:29:21  [ main:683 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2016-09-01 18:29:21  [ main:683 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2016-09-01 18:29:21  [ main:683 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2016-09-01 18:29:21  [ main:684 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.context.event.DefaultEventListenerFactory]
+2016-09-01 18:29:21  [ main:685 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.context.event.DefaultEventListenerFactory]
+2016-09-01 18:29:21  [ main:685 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2016-09-01 18:29:21  [ main:685 ] - [ DEBUG ]  Found bean property 'order' of type [int]
+2016-09-01 18:29:21  [ main:686 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2016-09-01 18:29:21  [ main:686 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 18:29:21  [ main:686 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 18:29:21  [ main:686 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2016-09-01 18:29:21  [ main:692 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.beans.factory.config.PropertyPlaceholderConfigurer
+2016-09-01 18:29:21  [ main:693 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.loginserver.entity.Test
+2016-09-01 18:29:21  [ main:693 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.net.DefaultDemuxingProtocolCodecFactory
+2016-09-01 18:29:21  [ main:693 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.loginserver.handler.DefaultMinaIoHandler
+2016-09-01 18:29:21  [ main:694 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.loginserver.MinaServer
+2016-09-01 18:29:21  [ main:694 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.net.action.support.DefaultActionFactory
+2016-09-01 18:29:21  [ main:694 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.net.action.support.DefaultActionDispatcher
+2016-09-01 18:29:21  [ main:694 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.net.filter.support.DefaultFilterChainFactory
+2016-09-01 18:29:21  [ main:695 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.net.filter.support.CommandCollectFilter
+2016-09-01 18:29:21  [ main:695 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.net.filter.support.CapabilityMonitor
+2016-09-01 18:29:21  [ main:696 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.config.AppConfig
+2016-09-01 18:29:21  [ main:696 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class com.wk.loginserver.entity.Service
+2016-09-01 18:29:21  [ main:697 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.annotation.ConfigurationClassPostProcessor
+2016-09-01 18:29:21  [ main:698 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor
+2016-09-01 18:29:21  [ main:699 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor
+2016-09-01 18:29:21  [ main:702 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.annotation.CommonAnnotationBeanPostProcessor
+2016-09-01 18:29:21  [ main:703 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.event.EventListenerMethodProcessor
+2016-09-01 18:29:21  [ main:703 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.event.DefaultEventListenerFactory
+2016-09-01 18:29:21  [ main:705 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor
+2016-09-01 18:29:21  [ main:706 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.annotation.ConfigurationClassPostProcessor$EnhancedConfigurationBeanPostProcessor
+2016-09-01 18:29:21  [ main:709 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.core.env.StandardEnvironment
+2016-09-01 18:29:21  [ main:713 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class java.util.Properties
+2016-09-01 18:29:21  [ main:714 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class java.util.Collections$UnmodifiableMap
+2016-09-01 18:29:21  [ main:716 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.support.DelegatingMessageSource
+2016-09-01 18:29:21  [ main:717 ] - [ DEBUG ]  No @EventListener annotations found on bean class: class org.springframework.context.event.SimpleApplicationEventMulticaster
+2016-09-01 18:29:21  [ main:718 ] - [ DEBUG ]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@5b0abc94]
+2016-09-01 18:29:21  [ main:719 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-09-01 18:29:21  [ main:720 ] - [ DEBUG ]  Publishing event in org.springframework.context.support.FileSystemXmlApplicationContext@7637f22: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.FileSystemXmlApplicationContext@7637f22: startup date [Thu Sep 01 18:29:20 CST 2016]; root of context hierarchy]
+2016-09-01 18:29:21  [ main:722 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2016-09-01 18:29:21  [ main:722 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2016-09-01 18:29:21  [ main:723 ] - [ DEBUG ]  Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+2016-09-01 18:29:21  [ main:724 ] - [ DEBUG ]  Returning cached instance of singleton bean 'minaServer'
+2016-09-01 18:29:21  [ main:808 ] - [ INFO ]  <-WGLoginServer application[1001] started->
+2016-09-01 18:29:21  [ main:808 ] - [ INFO ]  mina server started,listening:/127.0.0.1:8888

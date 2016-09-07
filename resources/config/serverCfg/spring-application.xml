@@ -16,6 +16,7 @@
 			</list>
 		</property>
 	</bean>
+	<!-- 测试 -->
 	<bean id="test" class="com.wk.loginserver.entity.Test">
 		<property name="test" value="${root}"></property>
 		<property name="appId" value="${current.appid}"/>
@@ -65,6 +66,9 @@
 			<value>/resources/config/properties/appConfig.properties</value>
 		</property>
 	</bean>
+	<!-- 测试 -->
 	<bean id="service" class="com.wk.loginserver.entity.Service"></bean>
 	<context:annotation-config />
+	<!-- 配置数据源 -->
+	<import resource="spring-dataSource.xml"/>
 </beans>
