@@ -21,8 +21,6 @@ public class JdbcTemplateTest {
 		while(iterator.hasNext()){
 			Map map = (Map)iterator.next();
 			System.out.println(map.get("id")+":"+map.get("mail_address"));
-		}
-		
+		}	
 	}
-
 }
