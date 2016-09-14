@@ -73,4 +73,6 @@
 	<import resource="spring-dataSource.xml"/>
 	<!-- 自动扫描组件 -->
 	<context:component-scan base-package="com.wk.loginserver.baseInfo.Dao"></context:component-scan>
+	<context:component-scan base-package="com.wk.loginserver.service"></context:component-scan>
+	<context:component-scan base-package="com.wk.loginserver.action"></context:component-scan>
 </beans>

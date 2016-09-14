@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.bw.baseJar.vo.BwBuildingVO;
 import com.bw.baseJar.vo.BwGameChannleVO;
 import com.wk.loginserver.baseInfo.Dao.DBBaseInforDAO;
+import com.wk.loginserver.service.channel.ChannelManager;
+import com.wk.loginserver.service.channel.ChannelManagerImpl;
 import com.wk.net.AppContext;
 
 public class AnnotationTest {
@@ -16,7 +18,7 @@ public class AnnotationTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		DBBaseInforDAO dbBaseInforDAOImpl=(DBBaseInforDAO)AppContext.getInstance().getBean("DBBaseInforDAOImpl");
+		DBBaseInforDAO dbBaseInforDAOImpl=(DBBaseInforDAO)AppContext.getInstance().getBean("dbBaseInforDAO");
 //		List<BwGameChannleVO> list = dbBaseInforDAOImpl.getGameServerChannleList();
 //		System.out.println(list.get(0).getChannlename());
 //		System.out.println(dbBaseInforDAOImpl);
@@ -24,7 +26,8 @@ public class AnnotationTest {
 		List<BwBuildingVO> list = dbBaseInforDAOImpl.queryBwBuildingVO();
 		System.out.println(list.get(0).getBuildingName());
 		//测试成功
-		
+		ChannelManagerImpl channelManagerImpl = (ChannelManagerImpl)AppContext.getInstance().getBean("channelManager");
+		System.out.println("test:"+channelManagerImpl.getDbBaseInforDAOImpl());
 	}
 
 }

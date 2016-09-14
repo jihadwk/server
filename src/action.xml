@@ -5,6 +5,6 @@
 		<action name="1008" bean="registerChannelAction" />
 		<!-- 登录模块 -->
 		<action name="1001" bean="userLoginAction" />
-		<action name="1007" bean="AreaListAction" />
+		<action name="1007" bean="areaListAction" />
 	</action-map>
 </aslan-app>

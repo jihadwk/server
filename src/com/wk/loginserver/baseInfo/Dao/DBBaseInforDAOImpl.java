@@ -29,7 +29,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-@Repository
+@Repository("dbBaseInforDAO")
 public class DBBaseInforDAOImpl extends BaseSpringDao implements DBBaseInforDAO {
 
     @SuppressWarnings("unchecked")
